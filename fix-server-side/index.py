@@ -12,4 +12,4 @@ def simplefix_init():
     msg = FixMessage()
     msg.append_string("8=FIX.4.2")
     msg.append_pair("9", "")
-    return 'p', 204
+    return jsonify(msg)
